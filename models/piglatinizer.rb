@@ -35,12 +35,11 @@ class PigLatinizer
         word = array.join + first_letter + second_letter
       else
         first_letter = word.chr
-        ending = first_letter
 
         array = word.chars
         array.delete_at(0)
 
-        word = array.join + ending
+        word = array.join + first_letter
       end
       word << 'ay'
     end

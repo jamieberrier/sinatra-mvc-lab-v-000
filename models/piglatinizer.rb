@@ -11,7 +11,7 @@ class PigLatinizer
     words.collect! do |word|
       if !consonant?(word[0])
         word << 'way'
-      elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])#word.start_with?('sch', 'scr', 'shr', 'spl', 'spr', 'squ', 'str', 'thr', 'Sch', 'Scr', 'Shr', 'Spl', 'Spr', 'Squ', 'Str', 'Thr')
+      elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
         array = word.chars
 
         first_letter = array[0]

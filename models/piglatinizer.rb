@@ -22,6 +22,7 @@ class PigLatinizer
         array.delete_at(0)
         array.delete_at(0)
 
+        word = array.join + first_letter + second_letter + third_letter
       elsif consonant?(word[0]) && consonant?(word[1])
         array = word.chars
 

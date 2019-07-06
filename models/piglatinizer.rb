@@ -1,10 +1,6 @@
 class PigLatinizer
   attr_reader :text
 
-  def initialize
-
-  end
-  
   def consonant?(char)
     !char.match(/[aAeEiIoOuU]/)
   end

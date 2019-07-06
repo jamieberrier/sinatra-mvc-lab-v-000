@@ -10,7 +10,7 @@ class PigLatinizer
 
     words.collect! do |word|
       if !consonant?(word[0])
-        word << 'way'
+        word << 'w'
       elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
         array = word.chars
 

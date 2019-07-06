@@ -33,7 +33,7 @@ class PigLatinizer
         array.delete_at(0)
 
         word = array.join + first_letter + second_letter + 'ay'
-      elsif word.start_with?(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/)
+      else#elsif word.start_with?(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/)
         first_letter = word.chr
         ending = first_letter + 'ay'
 

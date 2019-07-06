@@ -9,7 +9,7 @@ class PigLatinizer
     words = text.split(" ")
 
     words.collect! do |word|
-      if word.start_with?(/[aeouiAEOUI]/)
+      if !consonant(word[0])word.start_with?(/[aeouiAEOUI]/)
         word << 'way'
       elsif word.start_with?('sch', 'scr', 'shr', 'spl', 'spr', 'squ', 'str', 'thr', 'Sch', 'Scr', 'Shr', 'Spl', 'Spr', 'Squ', 'Str', 'Thr')
         array = word.chars

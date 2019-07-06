@@ -8,7 +8,7 @@ class PigLatinizer
   def consonant?(char)
     !char.match(/[aAeEiIoOuU]/)
   end
-  
+
   def piglatinize(text)
     words = text.split(" ")
 
